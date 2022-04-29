@@ -29,8 +29,8 @@ dependencies:
   flutter:
     sdk: flutter
   
-  http: ^0.13.4
-  youtube_explode_dart: ^1.10.10
+  http: ^0.13.3
+  youtube_explode_dart: ^1.8.0
 
 dev_dependencies:
   flutter_test:
@@ -39,5 +39,5 @@ dev_dependencies:
   pigeon: ^0.3.0
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.7.0 <3.0.0'
   flutter: ">=2.0.0"
