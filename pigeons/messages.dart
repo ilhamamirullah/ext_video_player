@@ -3,29 +3,29 @@ import 'package:pigeon/objc_generator.dart';
 import 'package:pigeon/pigeon_lib.dart';
 
 class TextureMessage {
-  int? textureId;
+  int textureId;
 }
 
 class LoopingMessage {
-  int? textureId;
-  bool? isLooping;
+  int textureId;
+  bool isLooping;
 }
 
 class VolumeMessage {
-  int? textureId;
-  double? volume;
+  int textureId;
+  double volume;
 }
 
 class PositionMessage {
-  int? textureId;
-  int? position;
+  int textureId;
+  int position;
 }
 
 class CreateMessage {
-  String? asset;
-  String? uri;
-  String? packageName;
-  String? formatHint;
+  String asset;
+  String uri;
+  String packageName;
+  String formatHint;
 }
 
 @HostApi()
@@ -52,14 +52,14 @@ void configurePigeon(PigeonOptions opts) {
     input: opts.input,
     objcOptions: ObjcOptions(
       prefix: 'FLT',
-      copyrightHeader: opts.objcOptions!.copyrightHeader,
-      header: opts.objcOptions!.header,
+      copyrightHeader: opts.objcOptions.copyrightHeader,
+      header: opts.objcOptions.header,
     ),
     javaOut:
         'android/src/main/java/io/flutter/plugins/videoplayer/Messages.java',
     javaOptions: JavaOptions(
-      className: opts.javaOptions!.className,
-      copyrightHeader: opts.javaOptions!.copyrightHeader,
+      className: opts.javaOptions.className,
+      copyrightHeader: opts.javaOptions.copyrightHeader,
       package: 'ext.videoplayer',
     ),
   );
